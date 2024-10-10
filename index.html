@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/card-container.css">
+</head>
+<body>
+    <header>
+        <h1>Weather App</h1>
+        <input type="text" placeholder="Enter city name..." id="search">
+        <button id="search-btn">Search</button>
+    </header>
+
+    <section class="card-container">
+        <div class="card">
+            <!-- Current Weather Section -->
+            <div class="current-weather">
+                <img id="weather-icon" src="path/to/icon.png" alt="Weather Icon" />
+                <h2 id="city-state">City, State</h2>
+                <p id="temperature">20°C</p>
+            </div>
+
+            <!-- Hourly Forecast Section -->
+            <div class="hourly-forecast">
+                <h3>Next 12 Hours</h3>
+                <div class="hourly-scroll">
+                    <!-- Hourly weather cards will be dynamically added here -->
+                    <div class="hourly-card">12 PM<br><img src="path/to/icon.png" alt="Weather Icon" /><br>22°C</div>
+                    <div class="hourly-card">1 PM<br><img src="path/to/icon.png" alt="Weather Icon" /><br>23°C</div>
+                    <div class="hourly-card">2 PM<br><img src="path/to/icon.png" alt="Weather Icon" /><br>21°C</div>
+                    <div class="hourly-card">12 PM<br><img src="path/to/icon.png" alt="Weather Icon" /><br>22°C</div>
+                    <div class="hourly-card">1 PM<br><img src="path/to/icon.png" alt="Weather Icon" /><br>23°C</div>
+                    <div class="hourly-card">2 PM<br><img src="path/to/icon.png" alt="Weather Icon" /><br>21°C</div>
+                    <div class="hourly-card">12 PM<br><img src="path/to/icon.png" alt="Weather Icon" /><br>22°C</div>
+                    <div class="hourly-card">1 PM<br><img src="path/to/icon.png" alt="Weather Icon" /><br>23°C</div>
+                    <div class="hourly-card">2 PM<br><img src="path/to/icon.png" alt="Weather Icon" /><br>21°C</div>
+                    <div class="hourly-card">12 PM<br><img src="path/to/icon.png" alt="Weather Icon" /><br>22°C</div>
+                    <div class="hourly-card">1 PM<br><img src="path/to/icon.png" alt="Weather Icon" /><br>23°C</div>
+                    <div class="hourly-card">2 PM<br><img src="path/to/icon.png" alt="Weather Icon" /><br>21°C</div>
+                </div>
+            </div>
+
+            <!-- Daily Forecast Section -->
+            <div class="daily-forecast">
+                <h3>Weekly Forecast</h3>
+                <div class="daily-row">
+                    <div class="daily-card">
+                        <h4>Monday</h4>
+                        <img src="path/to/icon.png" alt="Weather Icon" />
+                        <div class="temp-range-bar">
+                            <div class="cold-temp" style="width: 30%;">10°C</div>
+                            <div class="hot-temp" style="width: 70%;">25°C</div>
+                        </div>
+                    </div>
+                    <div class="daily-card">
+                        <h4>Tuesday</h4>
+                        <img src="path/to/icon.png" alt="Weather Icon" />
+                        <div class="temp-range-bar">
+                            <div class="cold-temp" style="width: 40%;">12°C</div>
+                            <div class="hot-temp" style="width: 60%;">22°C</div>
+                        </div>
+                    </div>
+                    <!-- Add more daily cards as needed -->
+                    <div class="daily-card">
+                        <h4>Wedneasday</h4>
+                        <img src="path/to/icon.png" alt="Weather Icon" />
+                        <div class="temp-range-bar">
+                            <div class="cold-temp" style="width: 40%;">12°C</div>
+                            <div class="hot-temp" style="width: 60%;">22°C</div>
+                        </div>
+                    </div>
+                    <div class="daily-card">
+                        <h4>Thursday</h4>
+                        <img src="path/to/icon.png" alt="Weather Icon" />
+                        <div class="temp-range-bar">
+                            <div class="cold-temp" style="width: 40%;">12°C</div>
+                            <div class="hot-temp" style="width: 60%;">22°C</div>
+                        </div>
+                    </div>
+                    <div class="daily-card">
+                        <h4>Friday</h4>
+                        <img src="path/to/icon.png" alt="Weather Icon" />
+                        <div class="temp-range-bar">
+                            <div class="cold-temp" style="width: 40%;">12°C</div>
+                            <div class="hot-temp" style="width: 60%;">22°C</div>
+                        </div>
+                    </div>
+                    <div class="daily-card">
+                        <h4>Saturday</h4>
+                        <img src="path/to/icon.png" alt="Weather Icon" />
+                        <div class="temp-range-bar">
+                            <div class="cold-temp" style="width: 40%;">12°C</div>
+                            <div class="hot-temp" style="width: 60%;">22°C</div>
+                        </div>
+                    </div>
+                    <div class="daily-card">
+                        <h4>Sunday</h4>
+                        <img src="path/to/icon.png" alt="Weather Icon" />
+                        <div class="temp-range-bar">
+                            <div class="cold-temp" style="width: 40%;">12°C</div>
+                            <div class="hot-temp" style="width: 60%;">22°C</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- More Info Section -->
+            <div class="more-info">
+                <h3>More Info</h3>
+                <p>Air Quality: Good</p>
+                <p>Humidity: 60%</p>
+                <p>Precipitation: 10%</p>
+                <p>Chance of Rain: 20%</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
